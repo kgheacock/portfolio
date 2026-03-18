@@ -24,151 +24,123 @@ export interface SkillGroup {
 
 export const projects: Project[] = [
   {
-    id: 'nexus-gateway',
-    name: 'Nexus API Gateway',
+    id: 'safetyhub',
+    name: 'SafetyHub — Law Enforcement Portal',
     description:
-      'High-performance API gateway with rate limiting, auth middleware, and request routing. Built for microservices architectures handling 100k+ req/s.',
-    tags: ['Go', 'Redis', 'Docker', 'PostgreSQL'],
-    github: 'https://github.com/kheacock/nexus-gateway',
+      'Public-facing portal enabling law enforcement agencies to submit legal disclosure requests to PayPal. Built most of the UI and the edge server layer. Handles government-grade security requirements.',
+    tags: ['React', 'Node.js', 'Express'],
+    github: 'https://github.com/kgheacock',
+    demo: 'https://www.paypal.com/safetyhub',
   },
   {
-    id: 'ts-di',
-    name: 'TypeScript DI Container',
+    id: 'urp-platform',
+    name: 'URP Platform — Back-Office Intake Portal',
     description:
-      'Lightweight dependency injection framework for TypeScript with decorator-based configuration and full type inference. Zero runtime overhead.',
-    tags: ['TypeScript', 'Node.js'],
-    github: 'https://github.com/kheacock/ts-di',
+      'Tech-led a universal intake portal that scaled adoption from 3 teams to 30+ back-office teams across PayPal. Primary focus on UI architecture and cross-team integrations.',
+    tags: ['React', 'TypeScript', 'REST APIs'],
+    github: 'https://github.com/kgheacock',
   },
   {
-    id: 'devflow',
-    name: 'DevFlow Dashboard',
+    id: 'ai-account-review',
+    name: 'AI Account Review Agent',
     description:
-      'Real-time engineering metrics dashboard tracking deploys, incidents, and team velocity. WebSocket-powered live updates with historical trend analysis.',
-    tags: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'WebSocket'],
-    github: 'https://github.com/kheacock/devflow',
-    demo: 'https://devflow.heacock.dev',
+      'Co-designed and delivered an AI agent that provides intelligent review recommendations for new account workflows in PayPal\'s admin portal. Reduced manual review overhead.',
+    tags: ['React', 'AI/ML integrations', 'Node.js'],
+    github: 'https://github.com/kgheacock',
   },
   {
-    id: 'logpipe',
-    name: 'Logpipe CLI',
+    id: 'sar-ncmec',
+    name: 'SAR & NCMEC Compliance Automation',
     description:
-      'Fast log streaming and filtering tool for distributed systems. Supports regex filters, JSON parsing, structured output, and color-coded severity levels.',
-    tags: ['Go', 'CLI'],
-    github: 'https://github.com/kheacock/logpipe',
+      'Led UI development for automating Suspicious Activity Report (SAR) generation and NCMEC child exploitation disclosure workflows. High-stakes regulatory compliance tooling.',
+    tags: ['React', 'TypeScript', 'compliance API integrations'],
+    github: 'https://github.com/kgheacock',
   },
   {
-    id: 'spectral-forms',
-    name: 'Spectral Forms',
+    id: 'scm-migration',
+    name: 'SCM Cloud Migration',
     description:
-      'Type-safe, schema-driven form library for React with Zod validation and zero runtime overhead. Infers form types directly from your schema definitions.',
-    tags: ['React', 'TypeScript', 'Zod'],
-    github: 'https://github.com/kheacock/spectral-forms',
-    demo: 'https://spectral-forms.dev',
-  },
-  {
-    id: 'cloudsync',
-    name: 'CloudSync',
-    description:
-      'CLI tool for syncing environment configs across cloud providers (AWS, GCP, Azure). Supports secret rotation, diff previews, and audit logging.',
-    tags: ['Python', 'AWS', 'GCP', 'CLI'],
-    github: 'https://github.com/kheacock/cloudsync',
+      'Contributed to migrating PayPal\'s internal Simplified Case Management ticketing system from on-premises infrastructure to Google Cloud Platform.',
+    tags: ['Google Cloud Platform', 'Node.js', 'migration tooling'],
+    github: 'https://github.com/kgheacock',
   },
 ]
 
 export const experiences: Experience[] = [
   {
-    id: 'stripe',
+    id: 'paypal',
     title: 'Senior Software Engineer',
-    company: 'Stripe',
-    period: '2021 – Present',
-    startYear: 2021,
+    company: 'PayPal',
+    period: '2020 – Present',
+    startYear: 2020,
     endYear: null,
     bullets: [
-      'Led migration of monolith to microservices architecture, reducing p99 latency by 40% across critical payment flows.',
-      'Built TypeScript SDK now used by 10k+ developers, with full type safety, tree-shaking, and automated API changelog generation.',
-      'Designed and implemented distributed rate limiting system processing 2M+ API calls/minute using Redis cluster.',
-      'Mentored 4 engineers, led technical design reviews, and established team-wide coding standards for TypeScript projects.',
+      'Tech lead on URP Platform — intake portal that scaled from 3 teams to 30+ back-office teams.',
+      'Built SafetyHub (paypal.com/safetyhub) — law enforcement portal for government/legal disclosure requests; owned most of the UI and edge server layer.',
+      'Built Admin Tool for account/disclosure moderation: drill-down by email domain, IP address, submission status.',
+      'Co-designed and delivered an AI agent providing review recommendations for new accounts in the admin portal.',
+      'UI lead for SAR (Suspicious Activity Report) automation.',
+      'Lead UI engineer for NCMEC disclosure generation and traditional SAR disclosures in child exploitation cases.',
+      'Led PayPal\'s internal SCM (Simplified Case Management) migration from on-prem to Google Cloud.',
     ],
   },
   {
-    id: 'hashicorp',
-    title: 'Software Engineer',
-    company: 'HashiCorp',
-    period: '2018 – 2021',
+    id: 'v5-systems',
+    title: 'Software Engineering Intern',
+    company: 'V5 Systems',
+    period: '2019',
+    startYear: 2019,
+    endYear: 2019,
+    bullets: [
+      'Internship at IoT/security tech company.',
+    ],
+  },
+  {
+    id: 'workspan',
+    title: 'Software Engineering Intern',
+    company: 'WorkSpan',
+    period: '2018 – 2019',
     startYear: 2018,
-    endYear: 2021,
+    endYear: 2019,
     bullets: [
-      'Core contributor to Terraform provider ecosystem, shipping 12+ provider integrations used by thousands of organizations.',
-      'Built internal tooling for provider testing and docs generation, reducing provider release cycle from 2 weeks to 2 days.',
-      'Implemented automated acceptance test framework across 30+ cloud providers using Go and Docker.',
-      'Contributed to open-source Terraform core including HCL parsing improvements and state management fixes.',
-    ],
-  },
-  {
-    id: 'shopify',
-    title: 'Full Stack Engineer',
-    company: 'Shopify',
-    period: '2016 – 2018',
-    startYear: 2016,
-    endYear: 2018,
-    bullets: [
-      'Built merchant analytics dashboards processing 1M+ events/day, delivering real-time sales and inventory insights.',
-      'Led adoption of TypeScript across the merchant tooling team, migrating 80k lines of JavaScript over 6 months.',
-      'Designed and shipped self-serve analytics query builder using React and a custom DSL for non-technical merchants.',
-    ],
-  },
-  {
-    id: 'twilio',
-    title: 'Software Engineer',
-    company: 'Twilio',
-    period: '2014 – 2016',
-    startYear: 2014,
-    endYear: 2016,
-    bullets: [
-      'Developed REST APIs for messaging platform serving 50M+ messages/day across SMS, MMS, and WhatsApp channels.',
-      'Built webhook reliability system with exponential backoff retry logic and dead letter queues, improving delivery rate to 99.97%.',
-      'Implemented real-time message status tracking pipeline using Kafka and PostgreSQL with sub-second latency.',
+      'Internship at SaaS startup focused on partner ecosystem management.',
     ],
   },
 ]
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: 'Languages',
-    skills: ['TypeScript', 'JavaScript', 'Go', 'Python', 'SQL', 'Bash'],
+    category: 'Frontend',
+    skills: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Next.js'],
   },
   {
-    category: 'Frameworks',
-    skills: ['React', 'Next.js', 'Node.js', 'Express', 'Fastify', 'tRPC'],
+    category: 'Backend',
+    skills: ['Node.js', 'Express', 'REST APIs'],
   },
   {
-    category: 'Databases',
-    skills: ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB', 'SQLite'],
+    category: 'Cloud/Infra',
+    skills: ['Google Cloud Platform', 'nginx', 'CI/CD'],
   },
   {
     category: 'Tools',
-    skills: ['Docker', 'Git', 'GitHub Actions', 'Webpack', 'Vite', 'pnpm'],
+    skills: ['Git', 'GitHub', 'VS Code'],
   },
   {
-    category: 'Cloud',
-    skills: ['AWS (EC2, S3, Lambda, RDS)', 'GCP', 'Cloudflare', 'Vercel', 'Nginx'],
-  },
-  {
-    category: 'Testing',
-    skills: ['Jest', 'Vitest', 'Playwright', 'Cypress', 'Testing Library'],
+    category: 'Other',
+    skills: ['AI/ML integrations', 'compliance tooling', 'law enforcement systems'],
   },
 ]
 
 export const contactInfo = {
-  email: 'keith@heacock.dev',
-  github: 'https://github.com/kheacock',
-  linkedin: 'https://linkedin.com/in/kheacock',
+  email: '',
+  github: 'https://github.com/kgheacock',
+  linkedin: 'https://linkedin.com/in/keithheacock',
 }
 
 export const bio = {
   name: 'Keith Heacock',
-  location: 'Austin, TX',
-  openToWork: true,
+  location: 'San Jose, CA',
+  openToWork: false,
   summary:
-    'Senior full-stack engineer with 8+ years experience building scalable web applications and distributed systems. Passionate about TypeScript, developer tooling, and open source.',
+    'Full stack software engineer with 5+ years at PayPal building law enforcement portals, compliance tools, and internal platforms at scale. Strong end-to-end delivery track record — from individual contributor to tech lead growing a platform from 3 teams to 30+. Experience with AI agents, cloud migration, and high-stakes regulatory systems (SAR, NCMEC). B.S. Computer Science, UC Santa Cruz, 2020.',
 }

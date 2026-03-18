@@ -82,15 +82,15 @@ export default function Hero() {
             <div className="border-t border-terminal-border pt-6 mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
               <div>
                 <span className="text-terminal-dim block text-xs mb-1">// location</span>
-                <span className="text-gray-300">📍 Austin, TX</span>
+                <span className="text-gray-300">📍 San Jose, CA</span>
               </div>
               <div>
                 <span className="text-terminal-dim block text-xs mb-1">// experience</span>
-                <span className="text-gray-300">8+ years</span>
+                <span className="text-gray-300">5+ years</span>
               </div>
               <div>
-                <span className="text-terminal-dim block text-xs mb-1">// status</span>
-                <span className="text-terminal-green">● Open to work</span>
+                <span className="text-terminal-dim block text-xs mb-1">// focus</span>
+                <span className="text-gray-300">Full Stack / PayPal</span>
               </div>
             </div>
 

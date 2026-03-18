@@ -1,5 +1,4 @@
 'use client'
-import { useState } from 'react'
 import { contactInfo } from '@/data/portfolio'
 
 function GitHubIcon() {
@@ -18,53 +17,8 @@ function LinkedInIcon() {
   )
 }
 
-function EmailIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect width="20" height="16" x="2" y="4" rx="2"/>
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-    </svg>
-  )
-}
-
-function CopyIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
-      <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
-    </svg>
-  )
-}
-
-function CheckIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="20 6 9 17 4 12"/>
-    </svg>
-  )
-}
 
 export default function Contact() {
-  const [copied, setCopied] = useState(false)
-
-  const handleCopyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(contactInfo.email)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2500)
-    } catch {
-      // Fallback
-      const el = document.createElement('textarea')
-      el.value = contactInfo.email
-      document.body.appendChild(el)
-      el.select()
-      document.execCommand('copy')
-      document.body.removeChild(el)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2500)
-    }
-  }
-
   return (
     <section id="contact" className="py-24 px-4 sm:px-6 max-w-6xl mx-auto">
       {/* Section header */}
@@ -90,12 +44,12 @@ export default function Contact() {
           </div>
           <div className="p-6">
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              I&apos;m currently open to new opportunities — full-time roles, contract work, or
-              interesting collaborations.
+              Senior software engineer with 5+ years building compliance tools, law enforcement
+              portals, and internal platforms at PayPal.
             </p>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Whether you have a project in mind, want to talk about distributed systems, or
-              just want to geek out about TypeScript — feel free to reach out.
+              Whether you have a project in mind, want to talk about full-stack development, or
+              discuss high-stakes regulatory systems — feel free to reach out via GitHub or LinkedIn.
             </p>
             <div className="border border-terminal-border rounded-sm p-4 bg-terminal-bg/50">
               <p className="text-terminal-dim text-xs mb-1">// response time</p>
@@ -106,34 +60,6 @@ export default function Contact() {
 
         {/* Right: contact links */}
         <div className="space-y-4">
-          {/* Email */}
-          <div className="terminal-window hover-glow transition-all duration-200">
-            <div className="p-5">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <span className="text-terminal-green">
-                    <EmailIcon />
-                  </span>
-                  <div>
-                    <p className="text-terminal-dim text-xs mb-0.5">email</p>
-                    <p className="text-gray-300 text-sm">{contactInfo.email}</p>
-                  </div>
-                </div>
-                <button
-                  onClick={handleCopyEmail}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-sm border transition-all duration-200 ${
-                    copied
-                      ? 'border-terminal-green text-terminal-green bg-terminal-green/10'
-                      : 'border-terminal-border text-terminal-dim hover:border-terminal-green hover:text-terminal-green'
-                  }`}
-                >
-                  {copied ? <CheckIcon /> : <CopyIcon />}
-                  {copied ? 'Copied!' : 'Copy'}
-                </button>
-              </div>
-            </div>
-          </div>
-
           {/* GitHub */}
           <a
             href={contactInfo.github}
@@ -149,7 +75,7 @@ export default function Contact() {
                 <div>
                   <p className="text-terminal-dim text-xs mb-0.5">github</p>
                   <p className="text-gray-300 text-sm group-hover:text-terminal-green transition-colors">
-                    github.com/kheacock
+                    github.com/kgheacock
                   </p>
                 </div>
                 <span className="ml-auto text-terminal-dim group-hover:text-terminal-green transition-colors text-xs">
@@ -174,7 +100,7 @@ export default function Contact() {
                 <div>
                   <p className="text-terminal-dim text-xs mb-0.5">linkedin</p>
                   <p className="text-gray-300 text-sm group-hover:text-blue-300 transition-colors">
-                    linkedin.com/in/kheacock
+                    linkedin.com/in/keithheacock
                   </p>
                 </div>
                 <span className="ml-auto text-terminal-dim group-hover:text-blue-400 transition-colors text-xs">
@@ -188,7 +114,7 @@ export default function Contact() {
           <div className="border border-terminal-border rounded-sm p-3 bg-terminal-surface">
             <pre className="text-terminal-green/25 text-xs leading-tight select-none text-center">
 {`// end of file
-// keith@heacock.dev
+// github.com/kgheacock
 // eof`}
             </pre>
           </div>
@@ -204,7 +130,7 @@ export default function Contact() {
           <span className="text-terminal-green">Tailwind CSS</span>
           {' '}—{' '}
           <a
-            href="https://github.com/kheacock"
+            href="https://github.com/kgheacock"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-terminal-green transition-colors"
@@ -213,7 +139,7 @@ export default function Contact() {
           </a>
         </p>
         <p className="text-terminal-dim/50 text-xs mt-2">
-          <span className="text-terminal-green/50">keith@heacock.dev</span>
+          <span className="text-terminal-green/50">github.com/kgheacock</span>
           <span className="text-terminal-dim/40">:</span>
           <span className="text-blue-400/50">~</span>
           <span className="text-terminal-dim/40">$ </span>

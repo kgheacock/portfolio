@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 
-const roles = ['Full Stack Engineer', 'TypeScript Expert', 'Open Source Contributor', 'API Architect']
+const roles = ['Full Stack Software Engineer', 'React & Node.js Developer', 'Tech Lead', 'Compliance Systems Builder']
 
 export default function TypingAnimation() {
   const [roleIndex, setRoleIndex] = useState(0)

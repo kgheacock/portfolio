@@ -30,14 +30,14 @@ export default function About() {
                 {bio.summary}
               </p>
               <p className="text-gray-400 leading-relaxed text-sm mb-6">
-                Over the past 8 years I&apos;ve worked across the full product lifecycle — from
-                architecting distributed systems and designing APIs, to shipping polished
-                front-end experiences. I care deeply about developer experience, type safety,
-                and writing code that teams can maintain and evolve.
+                Over the past 5 years at PayPal I&apos;ve worked across the full product lifecycle —
+                from building law enforcement portals and compliance tools to leading platform
+                migrations to Google Cloud. I care deeply about building reliable, high-stakes
+                systems that work when it matters most.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Outside of work I contribute to open source, write tooling for fun, and
-                occasionally blog about TypeScript patterns and systems design.
+                I&apos;ve grown from individual contributor to tech lead, scaling a back-office intake
+                platform from 3 teams to 30+. B.S. Computer Science, UC Santa Cruz, 2020.
               </p>
             </div>
           </div>
@@ -66,23 +66,17 @@ export default function About() {
               <div className="h-px bg-terminal-border" />
               <div className="flex justify-between">
                 <span className="text-terminal-dim">experience</span>
-                <span className="text-gray-300">8+ years</span>
+                <span className="text-gray-300">5+ years</span>
               </div>
               <div className="h-px bg-terminal-border" />
               <div className="flex justify-between">
                 <span className="text-terminal-dim">focus</span>
-                <span className="text-gray-300">Full Stack / Systems</span>
+                <span className="text-gray-300">Full Stack / PayPal</span>
               </div>
               <div className="h-px bg-terminal-border" />
               <div className="flex justify-between">
-                <span className="text-terminal-dim">status</span>
-                <span className="text-terminal-green flex items-center gap-1.5">
-                  <span
-                    className="w-2 h-2 rounded-full bg-terminal-green inline-block"
-                    style={{ boxShadow: '0 0 6px rgba(0,255,65,0.8)' }}
-                  />
-                  open to work
-                </span>
+                <span className="text-terminal-dim">education</span>
+                <span className="text-gray-300">B.S. CS, UC Santa Cruz</span>
               </div>
             </div>
           </div>
@@ -91,10 +85,10 @@ export default function About() {
           <div className="border border-terminal-border rounded-sm p-4 bg-terminal-surface">
             <pre className="text-terminal-green/30 text-xs leading-tight select-none overflow-hidden">
 {`┌─────────────────────┐
-│  > 8yr exp          │
-│  > distributed sys  │
-│  > OSS contributor  │
-│  > TypeScript nerd  │
+│  > 5yr exp          │
+│  > law enforcement  │
+│  > compliance tools │
+│  > tech lead        │
 └─────────────────────┘`}
             </pre>
           </div>

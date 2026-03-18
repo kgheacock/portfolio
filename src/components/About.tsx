@@ -30,14 +30,14 @@ export default function About() {
                 {bio.summary}
               </p>
               <p className="text-gray-400 leading-relaxed text-sm mb-6">
-                Over the past 5 years at PayPal I&apos;ve worked across the full product lifecycle —
-                from building law enforcement portals and compliance tools to leading platform
-                migrations to Google Cloud. I care deeply about building reliable, high-stakes
-                systems that work when it matters most.
+                Over the past 5+ years at PayPal I&apos;ve worked across the full product lifecycle — from
+                building law enforcement portals and compliance tooling to tech leading a platform that
+                scaled from 3 to 30+ back-office teams. I care deeply about end-to-end delivery,
+                system reliability, and high-stakes correctness.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm">
-                I&apos;ve grown from individual contributor to tech lead, scaling a back-office intake
-                platform from 3 teams to 30+. B.S. Computer Science, UC Santa Cruz, 2020.
+                I&apos;ve also worked on AI agents, cloud migration, and regulatory systems (SAR, NCMEC)
+                that demand both engineering rigor and a sharp eye for product impact.
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function About() {
               <div className="h-px bg-terminal-border" />
               <div className="flex justify-between">
                 <span className="text-terminal-dim">focus</span>
-                <span className="text-gray-300">Full Stack / PayPal</span>
+                <span className="text-gray-300">Full Stack / Compliance</span>
               </div>
               <div className="h-px bg-terminal-border" />
               <div className="flex justify-between">
@@ -87,8 +87,8 @@ export default function About() {
 {`┌─────────────────────┐
 │  > 5yr exp          │
 │  > law enforcement  │
-│  > compliance tools │
-│  > tech lead        │
+│  > AI/ML agents     │
+│  > cloud migration  │
 └─────────────────────┘`}
             </pre>
           </div>

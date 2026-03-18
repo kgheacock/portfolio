@@ -45,7 +45,7 @@ export const projects: Project[] = [
     name: 'AI Account Review Agent',
     description:
       'Co-designed and delivered an AI agent that provides intelligent review recommendations for new account workflows in PayPal\'s admin portal. Reduced manual review overhead.',
-    tags: ['React', 'AI/ML integrations', 'Node.js'],
+    tags: ['React', 'Node.js', 'AI/ML integrations'],
     github: 'https://github.com/kgheacock',
   },
   {
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     github: 'https://github.com/kgheacock',
   },
   {
-    id: 'scm-migration',
+    id: 'scm-cloud-migration',
     name: 'SCM Cloud Migration',
     description:
       'Contributed to migrating PayPal\'s internal Simplified Case Management ticketing system from on-premises infrastructure to Google Cloud Platform.',
@@ -140,7 +140,7 @@ export const contactInfo = {
 export const bio = {
   name: 'Keith Heacock',
   location: 'San Jose, CA',
-  openToWork: false,
+  openToWork: true,
   summary:
     'Full stack software engineer with 5+ years at PayPal building law enforcement portals, compliance tools, and internal platforms at scale. Strong end-to-end delivery track record — from individual contributor to tech lead growing a platform from 3 teams to 30+. Experience with AI agents, cloud migration, and high-stakes regulatory systems (SAR, NCMEC). B.S. Computer Science, UC Santa Cruz, 2020.',
 }

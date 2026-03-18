@@ -48,8 +48,8 @@ export default function Contact() {
               portals, and internal platforms at PayPal.
             </p>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Whether you have a project in mind, want to talk about full-stack development, or
-              discuss high-stakes regulatory systems — feel free to reach out via GitHub or LinkedIn.
+              Whether you have a project in mind, want to talk about compliance systems, AI tooling,
+              or just want to connect — feel free to reach out via GitHub or LinkedIn.
             </p>
             <div className="border border-terminal-border rounded-sm p-4 bg-terminal-bg/50">
               <p className="text-terminal-dim text-xs mb-1">// response time</p>
